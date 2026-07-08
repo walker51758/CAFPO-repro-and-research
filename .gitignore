@@ -1,0 +1,31 @@
+# Smoke test files
+_smoke_*.py
+
+# Backup files
+*.planA_backup
+*.fixedstart_backup
+
+# Data output
+rqdata_output/
+
+# Notebook run artifacts
+notebook_run.pid
+notebook_run_stderr.log
+notebook_run_stdout.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
