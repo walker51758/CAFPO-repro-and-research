@@ -46,3 +46,23 @@
 | FF6GroupValueWeight | +48.3% | 0.381 | -23.5% |
 | CAFPO T=0.2         | +17.1% | 0.196 | -47.1% |
 
+## Uncommitted Data Files
+
+以下文件未提交到 git 仓库（由 `.gitignore` 排除），需要从上游数据源重新获取或由脚本生成：
+
+| 路径 | 说明 |
+|------|------|
+| `rqdata_output/` | 通过RQData接口下载的原始数据（K线、行情、财务因子等），由下载脚本生成 |
+| `_smoke_*.py` | 快速冒烟测试脚本，仅供本地调试用 |
+| `*.planA_backup` / `*.fixedstart_backup` | 实验过程中的手动备份文件 |
+| `notebook_run.pid` / `notebook_run_*.log` | Jupyter notebook 后台运行产生的临时文件 |
+
+以下文件已提交：
+
+| 路径 | 说明 |
+|------|------|
+| `Gu_Kelly_Xiu_94_Firm_Characteristics.xlsx` | 94个公司特征数据（论文核心输入） |
+| `download_rqdata_direct_easy.py` / `download_rqdata_strict45.py` | RQData 数据下载脚本 |
+| `prepare_cafpo_reproduction_panel.py` | 面板数据预处理脚本 |
+| `cafpo_reproduction.py` / `cafpo_ff6_experiments.py` 等 | 核心实验代码 |
+
